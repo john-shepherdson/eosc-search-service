@@ -33,7 +33,9 @@ export const softwareAdapter: IAdapter = {
     date: formatPublicationDate(openAIREResult['publication_date']),
     url: `${
       ConfigService.config?.eosc_explore_url
-    }/search/result?id=${openAIREResult?.id?.split('|')?.pop()}`,
+    }/search/result?id=${encodeURIComponent(
+      openAIREResult?.id?.split('|')?.pop() || ''
+    )}`,
     coloredTags: [],
     tags: [
       {
@@ -41,6 +43,12 @@ export const softwareAdapter: IAdapter = {
         values: toValueWithLabel(toArray(openAIREResult?.author_names)),
         filter: 'author_names',
         showMoreThreshold: 10,
+      },
+      {
+        label: 'EOSC Node',
+        values: toValueWithLabel(toArray(openAIREResult.node)),
+        filter: 'node',
+        showMoreThreshold: 4,
       },
       {
         label: 'Publisher',

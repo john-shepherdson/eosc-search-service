@@ -1,5 +1,57 @@
 # Changelog
 
+## [2.30.0](https://github.com/cyfronet-fid/eosc-search-service/compare/v2.29.0...v2.30.0) (2025-06-05)
+
+
+### Features
+
+* [[#1591](https://github.com/cyfronet-fid/eosc-search-service/issues/1591)] display node for oag resources ([58c7102](https://github.com/cyfronet-fid/eosc-search-service/commit/58c7102537fc2feaee0fd60894daea9cd8026a1f))
+
+## [2.29.0](https://github.com/cyfronet-fid/eosc-search-service/compare/v2.28.0...v2.29.0) (2025-05-30)
+
+
+### Features
+
+* [[#1578](https://github.com/cyfronet-fid/eosc-search-service/issues/1578)] node as a string ([fd44622](https://github.com/cyfronet-fid/eosc-search-service/commit/fd44622f04d2b2714764f2fff5b7f83905c7dc34))
+* [[#1582](https://github.com/cyfronet-fid/eosc-search-service/issues/1582)] rename node to eosc node ([134e7a6](https://github.com/cyfronet-fid/eosc-search-service/commit/134e7a687612f7b146218327af98029014aef1b1))
+
+## [2.28.0](https://github.com/cyfronet-fid/eosc-search-service/compare/v2.27.0...v2.28.0) (2025-05-28)
+
+
+### Features
+
+* [[#1570](https://github.com/cyfronet-fid/eosc-search-service/issues/1570)] display node as filter, tag, in detail page ([bbed5e4](https://github.com/cyfronet-fid/eosc-search-service/commit/bbed5e4f447afb3ad4e228335483cd98c1e7faf8))
+
+
+### Bug Fixes
+
+* [[#1572](https://github.com/cyfronet-fid/eosc-search-service/issues/1572)] duplicated funder filter ([0588a4c](https://github.com/cyfronet-fid/eosc-search-service/commit/0588a4ca7181d4a92026e1f04a4d6eabad89bc22))
+
+## [2.27.0](https://github.com/cyfronet-fid/eosc-search-service/compare/v2.26.0...v2.27.0) (2025-05-15)
+
+
+### Features
+
+* [[#1549](https://github.com/cyfronet-fid/eosc-search-service/issues/1549)] encode ids ([38ebdb6](https://github.com/cyfronet-fid/eosc-search-service/commit/38ebdb6b3ca1d1bdc85434c4a5dee9eb16c9d72a))
+
+
+### Bug Fixes
+
+* [[#1550](https://github.com/cyfronet-fid/eosc-search-service/issues/1550)] oidc_host default value ([3c855cc](https://github.com/cyfronet-fid/eosc-search-service/commit/3c855ccef80c3285e867b129071fdf94e191074a))
+* remove tag_list ([#1542](https://github.com/cyfronet-fid/eosc-search-service/issues/1542)) ([8737d67](https://github.com/cyfronet-fid/eosc-search-service/commit/8737d67b7910a4eeaad4d8b412d6ae213965f558))
+
+## [2.26.0](https://github.com/cyfronet-fid/eosc-search-service/compare/v2.25.0...v2.26.0) (2025-02-05)
+
+
+### Features
+
+* [[#1492](https://github.com/cyfronet-fid/eosc-search-service/issues/1492)] update favicon ([1138c18](https://github.com/cyfronet-fid/eosc-search-service/commit/1138c1836fc42cda8caca67b29ac7493aee392d9))
+
+
+### Bug Fixes
+
+* [[#1495](https://github.com/cyfronet-fid/eosc-search-service/issues/1495)] backend address in proxy external ([8afd17a](https://github.com/cyfronet-fid/eosc-search-service/commit/8afd17a8b25bc12634a78b91171904c64d7c8bf4))
+
 ## [2.25.0](https://github.com/cyfronet-fid/eosc-search-service/compare/v2.24.0...v2.25.0) (2025-01-20)
 
 

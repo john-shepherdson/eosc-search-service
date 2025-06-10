@@ -6,6 +6,23 @@ export const guidelinesFilters: IFiltersConfig = {
   id: URL_PARAM_NAME,
   filters: [
     {
+      id: 'node',
+      filter: 'node',
+      label: 'EOSC Node',
+      type: 'multiselect',
+      defaultCollapsed: false,
+      tooltipText: '',
+      expandArrow: true,
+    },
+    {
+      id: 'node',
+      filter: 'node',
+      label: 'EOSC Node',
+      type: 'tag',
+      defaultCollapsed: false,
+      tooltipText: '',
+    },
+    {
       id: 'author_names',
       filter: 'author_names',
       label: 'Creator Name',
@@ -70,14 +87,6 @@ export const guidelinesFilters: IFiltersConfig = {
       filter: 'license',
       label: 'License',
       type: 'multiselect',
-      defaultCollapsed: false,
-      tooltipText: '',
-    },
-    {
-      id: 'tag_list',
-      filter: 'tag_list',
-      label: 'Keywords',
-      type: 'tag',
       defaultCollapsed: false,
       tooltipText: '',
     },

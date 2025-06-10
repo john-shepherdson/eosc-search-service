@@ -29,7 +29,7 @@ export const trainingsAdapter: IAdapter = {
       value: training['type'] || '',
     },
     collection: COLLECTION,
-    url: '/trainings/' + training.id || '',
+    url: '/trainings/' + encodeURIComponent(training.id) || '',
     coloredTags: [],
     tags: [
       {
@@ -37,6 +37,12 @@ export const trainingsAdapter: IAdapter = {
         values: toValueWithLabel(toArray(training['author_names'])),
         filter: 'author_names',
         showMoreThreshold: 10,
+      },
+      {
+        label: 'EOSC Node',
+        values: toValueWithLabel(toArray(training?.node)),
+        filter: 'node',
+        showMoreThreshold: 4,
       },
       {
         label: 'Content type',

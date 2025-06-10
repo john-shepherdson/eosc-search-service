@@ -29,10 +29,11 @@ export interface IProvider {
   societal_grand_challenges: string[];
   street_name_and_number: string;
   structure_types: string[];
-  tag_list: string[];
-  tag_list_tg: string[];
+  keywords: string[];
+  keywords_tg: string[];
   webpage_url: string[];
   title: string;
   _version_: number;
   type: IValueWithLabel;
+  node: string;
 }

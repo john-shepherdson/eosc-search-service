@@ -30,9 +30,15 @@ export const guidelinesAdapter: IAdapter = {
       value: 'guideline',
     },
     collection: COLLECTION,
-    url: '/guidelines/' + guideline.id || '',
+    url: '/guidelines/' + encodeURIComponent(guideline.id) || '',
     coloredTags: [],
     tags: [
+      {
+        label: 'EOSC Node',
+        values: toValueWithLabel(toArray(guideline?.node)),
+        filter: 'node',
+        showMoreThreshold: 4,
+      },
       {
         label: 'Provider',
         values: toValueWithLabel(toArray(guideline['providers'])),

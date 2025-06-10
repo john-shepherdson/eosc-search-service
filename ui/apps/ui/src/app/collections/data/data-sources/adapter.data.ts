@@ -28,12 +28,24 @@ export const dataSourcesAdapter: IAdapter = {
       label: dataSource.type || '',
       value: (dataSource.type || '')?.replace(/ +/gm, '-'),
     },
-    url: `${ConfigService.config?.marketplace_url}/services/${dataSource.pid}`,
-    logoUrl: `${ConfigService.config?.marketplace_url}/services/${dataSource.pid}/logo`,
-    orderUrl: `${ConfigService.config?.marketplace_url}/services/${dataSource.pid}/offers`,
+    url: `${
+      ConfigService.config?.marketplace_url
+    }/services/${encodeURIComponent(dataSource.pid || '')}`,
+    logoUrl: `${
+      ConfigService.config?.marketplace_url
+    }/services/${encodeURIComponent(dataSource.pid || '')}/logo`,
+    orderUrl: `${
+      ConfigService.config?.marketplace_url
+    }/services/${encodeURIComponent(dataSource.pid || '')}/offers`,
     collection: COLLECTION,
     coloredTags: [],
     tags: [
+      {
+        label: 'EOSC Node',
+        values: toValueWithLabel(toArray(dataSource?.node)),
+        filter: 'node',
+        showMoreThreshold: 4,
+      },
       {
         label: 'Organisation',
         values: toValueWithLabel(toArray(dataSource.resource_organisation)),
@@ -52,7 +64,7 @@ export const dataSourcesAdapter: IAdapter = {
     ],
     secondaryTags: [
       toInterPatternsSecondaryTag(dataSource.eosc_if ?? [], 'eosc_if'),
-      toKeywordsSecondaryTag(dataSource.tag_list ?? [], 'tag_list'),
+      toKeywordsSecondaryTag(dataSource.keywords ?? [], 'keywords'),
     ],
     ...parseStatistics(dataSource),
   }),

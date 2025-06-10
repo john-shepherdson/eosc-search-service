@@ -6,6 +6,15 @@ export const providersFilters: IFiltersConfig = {
   id: URL_PARAM_NAME,
   filters: [
     {
+      id: 'node',
+      filter: 'node',
+      label: 'EOSC Node',
+      type: 'multiselect',
+      defaultCollapsed: false,
+      tooltipText: '',
+      expandArrow: true,
+    },
+    {
       id: 'scientific_domains',
       filter: 'scientific_domains',
       label: 'Scientific domain',
@@ -42,8 +51,16 @@ export const providersFilters: IFiltersConfig = {
       expandArrow: true,
     },
     {
-      id: 'tag_list',
-      filter: 'tag_list',
+      id: 'node',
+      filter: 'node',
+      label: 'EOSC Node',
+      type: 'tag',
+      defaultCollapsed: false,
+      tooltipText: '',
+    },
+    {
+      id: 'keywords',
+      filter: 'keywords',
       label: 'Keywords',
       type: 'tag',
       defaultCollapsed: false,

@@ -14,6 +14,15 @@ export const allCollectionsFilters: IFiltersConfig = {
   id: URL_PARAM_NAME,
   filters: [
     {
+      id: 'node',
+      filter: 'node',
+      label: 'EOSC Node',
+      type: 'multiselect',
+      defaultCollapsed: false,
+      tooltipText: '',
+      expandArrow: true,
+    },
+    {
       id: 'related_organisation_titles',
       filter: 'related_organisation_titles',
       label: 'Related organisations',
@@ -96,6 +105,14 @@ export const allCollectionsFilters: IFiltersConfig = {
       expandArrow: true,
     },
     {
+      id: 'node',
+      filter: 'node',
+      label: 'EOSC Node',
+      type: 'tag',
+      defaultCollapsed: false,
+      tooltipText: '',
+    },
+    {
       id: 'author_names',
       filter: 'author_names',
       label: 'Author',
@@ -130,14 +147,6 @@ export const allCollectionsFilters: IFiltersConfig = {
     {
       id: 'keywords',
       filter: 'keywords',
-      label: 'Keywords',
-      type: 'tag',
-      defaultCollapsed: false,
-      tooltipText: '',
-    },
-    {
-      id: 'tag_list',
-      filter: 'tag_list',
       label: 'Keywords',
       type: 'tag',
       defaultCollapsed: false,

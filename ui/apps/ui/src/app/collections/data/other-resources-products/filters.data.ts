@@ -15,6 +15,15 @@ export const otherResourcesProductsFilters: IFiltersConfig = {
   id: URL_PARAM_NAME,
   filters: [
     {
+      id: 'node',
+      filter: 'node',
+      label: 'EOSC Node',
+      type: 'multiselect',
+      defaultCollapsed: false,
+      tooltipText: '',
+      expandArrow: true,
+    },
+    {
       id: 'unified_categories',
       filter: 'unified_categories',
       label: 'Research step',
@@ -47,15 +56,6 @@ export const otherResourcesProductsFilters: IFiltersConfig = {
       label: 'Scientific domain',
       type: 'multiselect',
       defaultCollapsed: false,
-      tooltipText: '',
-      expandArrow: true,
-    },
-    {
-      id: 'funder',
-      filter: 'funder',
-      label: 'Funder',
-      type: 'multiselect',
-      defaultCollapsed: true,
       tooltipText: '',
       expandArrow: true,
     },
@@ -141,6 +141,14 @@ export const otherResourcesProductsFilters: IFiltersConfig = {
       defaultCollapsed: true,
       tooltipText: SDG_TOOLTIP_TEXT,
       expandArrow: true,
+    },
+    {
+      id: 'node',
+      filter: 'node',
+      label: 'EOSC Node',
+      type: 'tag',
+      defaultCollapsed: false,
+      tooltipText: '',
     },
     {
       id: 'source',
